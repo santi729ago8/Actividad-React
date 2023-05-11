@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    float: right;
+}
+.contenedor{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+#contenedor-2{
+    position: relative;
+    left: 200px;
+    bottom: 500px;
+}

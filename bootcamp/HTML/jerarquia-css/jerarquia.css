@@ -1,0 +1,14 @@
+/* selector universal */
+*{
+    box-sizing: border-box;
+}
+/* selector de etiqueta */
+h1{
+    color: yellow;
+}
+.header{
+    color: blue;
+}
+#header-id{
+    color: aqua;
+}
