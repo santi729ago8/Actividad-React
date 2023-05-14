@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="..//iniciando-html/img/logo-2.jpg" type="image/x-icon">
     <title>Formulario</title>
+    <link rel="stylesheet" href="form.css">
 </head>
-<body style="background-color: azure;">
+<body class="formulario" style="background-color: azure;">
+    <h1>Registrate</h1>
+        <br>
+        <p>Para acceder a la compra de las obras principales de Pablo Picasso</p>
+        <br>
+        <br>
     <form action="">
         <label for="nombre"><strong>Nombre:</strong></label> 
-        <input required placeholder="Escribe tu nombre" id="nombre" name="nombre" type="text"> 
-        <textarea name="nombre" id="nombre" cols="20" rows="3"></textarea>
+        <input required placeholder="Escribe tu nombre/nombres" id="nombre" name="nombre" type="text"> 
         <br>
         <br>
+        <label for="apellidos"><strong>Apellidos:</strong></label> 
+        <input required placeholder="Escribe tus apellidos" id="apellidos" name="apellidos" type="text"> 
         <br>
-        <!-- <input placeholder="Escribe tu nombre" type="text"> --> 
+        <br>
         <label for="email"><strong>Email:</strong></label>
-        <input required placeholder="Escribe tu correo" id="email" name="email" type="email">
-        <textarea name="email" id="email" cols="20" rows="3"></textarea>
+        <input required placeholder="Escribe tu correo @" id="email" name="email" type="email">
         <br>
         <br>
+        <label for="telefono"><strong>Telefono:</strong></label>
+        <input required placeholder="Escribe tu telefono" id="email" name="telefono" type="number">
         <br>
-        <!-- <input placeholder="Escribe tu correo" type="text"> --> 
-        <button type="submit"><strong>Enviar </strong></button>
+        <br>
+        <textarea required placeholder="Mensaje" name="mensaje" id="mensaje" cols="55" rows="13" type="texto"></textarea>
+        <br>
+        <br>
+    <button type="submit"><strong>Enviar</strong>
+    </a>
+    </button>
     </form>
 </body>
 </html>
