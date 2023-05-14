@@ -1,118 +1,152 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body{
+
+body {
     position: relative;
 }
-.fondo{
+
+.fondo {
     background-image: url("img/fondo-1.jpg");
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.1;
 }
-main{
+
+main {
     padding: 16px;
     position: relative;
 }
-section{
+
+section {
     margin-bottom: 40px;
 }
-.tamaño{
+
+.tamaño {
     height: 100%;
     width: 100%;
 }
-h1{
+
+h1 {
     text-align: center;
     color: rgb(88, 129, 165);
     font-size: 45px;
 }
-.imagen-biografia{
+
+.imagen-biografia {
     text-align: center;
 }
-.seccion-1{
+
+.seccion-1 {
     display: flex;
 }
+
 .seccion-1 div {
     padding: 16px;
 }
-.seccion-1 span{
+
+.seccion-1 span {
     color: rgb(84, 97, 185);
     padding-bottom: 8px;
     font-style: italic;
     font-weight: bold;
 }
-.seccion-1 p{
+
+.seccion-1 p {
     color: rgb(73, 74, 85);
 }
-.seccion-2 nav{
+
+.seccion-2 nav {
     background-color: rgb(237, 241, 247);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 16px ;
-    -webkit-box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
+    margin-top: 16px;
+    -webkit-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -3px rgba(0, 0, 0, 0.75);
 }
-.seccion-2 ul{
+
+.seccion-2 ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 8px;
     justify-content: space-between;
 }
-.seccion-2 ul .descripcion{
+
+.seccion-2 ul .descripcion {
     width: 45%;
 }
-.seccion-2 ul .informacion{
+
+.seccion-2 ul .informacion {
     width: 45%;
 }
-.seccion-2 ul .galeria{
+
+.seccion-2 .picaso {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(165, 2, 2);
+}
+
+.seccion-2 ul .galeria {
     width: 90%;
 }
-.seccion-2 ul .title{
+
+.seccion-2 ul .title {
     font-size: 20px;
     text-decoration: none;
     margin-bottom: 8px;
     color: rgb(84, 93, 97);
 }
-.seccion-2 ul .galeria .title{
+
+.seccion-2 ul .galeria .title {
     display: block;
     width: 100%;
     text-align: center;
     margin: auto;
 }
-.seccion-2 ul .galeria img{
+
+.seccion-2 ul .galeria img {
     max-width: 30%;
     border-radius: 40px;
     object-fit: cover;
     height: 200px;
 }
-.seccion-3{
+
+.seccion-3 {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .seccion-3 .contenedor-imagenes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 12px;
     width: 80%;
 }
-.seccion-3 h3{
+
+.seccion-3 .contenedor-imagenes:hover {
+    transform: scale(50%);
+}
+
+.seccion-3 h3 {
     font-size: 20px;
     margin-bottom: 16px;
 }
-.seccion-3 .contenedor{
+
+.seccion-3 .contenedor {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.cuadros{
+
+.cuadros {
     text-decoration: none;
     background-color: rgb(3, 40, 95);
     color: white;
@@ -121,7 +155,12 @@ h1{
     border-radius: 12px;
     text-align: center;
 }
-.registrate{
+
+.cuadros:hover {
+    color: rgb(11, 156, 84);
+}
+
+.registrate {
     text-decoration: none;
     background-color: white;
     color: rgb(3, 40, 95);
@@ -130,4 +169,8 @@ h1{
     border-radius: 12px;
     border: 1px solid rgb(3, 40, 95);
     text-align: center;
+}
+
+.registrate:active {
+    background-color: orange;
 }
