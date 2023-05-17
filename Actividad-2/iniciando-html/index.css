@@ -173,7 +173,7 @@ h1 {
 
 .cuadros:hover {
     color: rgb(11, 156, 84);
-    transform: scale(1.10);
+    transform: scale(1.20);
 }
 
 .registrate {
@@ -190,3 +190,4 @@ h1 {
 .registrate:active {
     background-color: orange;
 }
+
