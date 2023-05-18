@@ -1,3 +1,4 @@
+//Objetos recorriendo y sacando promedio de las notas
 let promedio = 0
 const estudiantes = {
     estudiante1: {
