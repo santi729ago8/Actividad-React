@@ -6,7 +6,7 @@ const repetirContraseña = document.querySelector('#pass2')
 const codigos = document.querySelector('#codigos') 
 const terminos = document.querySelector('#terminos')
 
-//Zona de variables d elos botones
+//Zona de variables de los botones
 const btnRegistrar = document.querySelector('#botonRegistrar')
 const btnReset = document.querySelector('#botonReset')
 
