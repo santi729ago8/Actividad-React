@@ -2,13 +2,10 @@
 const Counter = document.querySelector('titulo')
 const mensajecontador = document.querySelector('#mensajecontador')
 
-
-
 //Zona de variables de botones
 const btnSumar = document.querySelector('#button-1')
 const btnResetear = document.querySelector('#button-2')
 const btnRestar = document.querySelector('#button-3')
-
 
 let num = Number(mensajecontador.textContent)
 
