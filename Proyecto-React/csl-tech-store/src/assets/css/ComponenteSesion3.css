@@ -1,8 +1,16 @@
-.footer-ul-1{
-    text-decoration: none;
-    margin: 0 auto;
-    padding: 0;
-    float: none;
-    position: relative;
-    color: #929292;
+
+.footer-ul{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.footer{
+    color: aliceblue;
+    
+}
+.footer_a{
+    color: white;
 }

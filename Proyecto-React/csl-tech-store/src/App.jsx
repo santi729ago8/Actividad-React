@@ -8,11 +8,12 @@ import alert from 'sweetalert'
 import swal from 'sweetalert'
 
 
+
 const App = () => {
   const mostrarAlerta = () => {
     swal({
       title:'Bienvenido',
-      text:'¿Quieres recibir notificaciones?',
+      text:'¿Quieres recibir las últimas novedades y las ofertas más ardientes?',
       icon:'warning',
       buttons: ['No', 'Sí']
     }).then(respuesta => {
@@ -39,10 +40,12 @@ const App = () => {
         <ComponenteSesion3 />
       </div>
 
+
       <div className='app'>
         <button onClick={mostrarAlerta()}></button>
       </div>
     </div>
+
 
 
   )
