@@ -1,8 +1,10 @@
 import React from 'react'
+import './../assets/css/Menu.css'
 
 const Menu = () => {
 
 
+    
     return (
         <div className='App'>
             <div className='Titulo'>
