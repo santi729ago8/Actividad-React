@@ -4,22 +4,25 @@ import './../assets/css/Menu.css'
 const Menu = () => {
 
 
+
+
+
     
     return (
         <div className='App'>
             <div className='Titulo'>
-                <h1>CSL Tech Store</h1>
+                <h1>CSL Store</h1>
             </div>
             <div className="barra de navegacion">
                 <nav className="menu">
                     <a className="option" href="">Contenido</a>
                     <a className="option" href="">Mis Pedidos</a>
                     <a className="option" href="Blog">Mi Carrito</a>
-                    <button href="formulario">Registrate</button>
+                    <button className='registrate' href="formulario">Registrate</button>
                 </nav>
             </div>
             <div>
-                <label>Muy pronto Black Friday <button>Suscribete aqui y recibe el 5% off</button></label>
+                <label>Muy pronto Black Friday del 26 de mayo al 2 de junio <button>Suscribete aquí y recibe el 5% off</button> aprovecha las mejores hiperofertas</label>
             </div>
         </div>
     )

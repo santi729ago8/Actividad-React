@@ -1,20 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 .Titulo{
+    position: fixed;
+    padding-top: 100px;
     text-align: center;
     color: black;
     height: 20px;
 }
 
 .menu{
-    width: 20px;
-    height: 12px;
-    margin-top: 50px;
-    padding: 100px;
-    margin-left: 50px;
-    display: block;
-    float: inline-start;
-    text-align: center;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(49, 183, 245);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.registrate {
+    background-color: rgb(110, 110, 119);
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
 }

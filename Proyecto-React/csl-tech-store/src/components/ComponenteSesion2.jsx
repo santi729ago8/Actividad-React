@@ -1,8 +1,13 @@
 import React from 'react'
+import './../assets/css/ComponenteSesion2.css'
 
 const ComponenteSesion2 = () => {
     return (
-        <div>ComponenteSesion2</div>
+        <div>
+            <div className='contenedor-2'>
+                <h2>Ofertas Destacadas</h2>
+            </div>
+        </div>
     )
 }
 
