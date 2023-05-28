@@ -1,11 +1,12 @@
 import './App.css'
-import Menu from './components/Menu'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import React from 'react'
-import ComponenteSesion1 from './components/ComponenteSesion1'
-import ComponenteSesion2 from './components/ComponenteSesion2'
-import ComponenteSesion3 from './components/ComponenteSesion3'
 import alert from 'sweetalert'
 import swal from 'sweetalert'
+import Home from './components/Home'
+import Productos from './components/Productos'
+import Carrito from './components/Carrito'
+import Navbar from "./components/Navbar"
 
 
 
@@ -24,22 +25,17 @@ const App = () => {
 
   return (
     <div>
-      <div>
-        <Menu />
-      </div>
 
-      <div>
-        <ComponenteSesion1 />
-      </div>
-
-      <div>
-        <ComponenteSesion2 />
-      </div>
-
-      <div>
-        <ComponenteSesion3 />
-      </div>
-
+    <div>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={ <Home/> }/>
+          <Route path="/productos" element={ <Productos/> }/>
+          <Route path="/carrito" element={ <Carrito/> }/>
+        </Routes>
+      </Router>
+    </div>
 
       <div className='app'>
         <button onClick={mostrarAlerta()}></button>

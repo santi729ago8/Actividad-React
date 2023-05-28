@@ -1,11 +1,4 @@
-import React from 'react'
-import './../assets/css/Menu.css'
-
-const Menu = () => {
-
-    
-    return (
-        <div className='App'>
+ELIMINADO DE HOME JSX
             <nav className="justify-content-end">
                 <nav className="left">
                     <select className="contenedor">
@@ -23,11 +16,5 @@ const Menu = () => {
             <div className='Titulo'>
                 <h1>CSL STORE</h1>
             </div>
-            <div className='label'>
-                <label>Muy pronto Black Friday del 26 de mayo al 2 de junio aprovecha las mejores hiperofertas</label>
-            </div>
-        </div>
-    )
-}
 
-export default Menu
+

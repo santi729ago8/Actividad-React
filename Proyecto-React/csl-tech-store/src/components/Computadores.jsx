@@ -7,78 +7,80 @@ const Computadores = (props) => {
         {
             id: 0,
             name: 'Apple',
-            referencia: 'MacBook', 
-            precio: '$1.000.000'           
+            referencia: 'Yoga 9i 8va Gen (14”, Intel)', 
+            precio: '8,699,000',
+            imagen: ''           
         },
         {
             id: 1,
             name: 'Apple',
-            referencia: 'MacBook', 
-            precio: '$1.000.000'
+            referencia: 'ThinkPad P15 (15.6”, Intel)', 
+            precio: '5,999,000',
+            imagen: ''
         },
         {
             id: 2,
             name: 'Apple',
-            referencia: 'MacBook', 
-            precio: '$1.000.000'
+            referencia: 'ASUS Vivobook Pro 15” OLED', 
+            precio: '5,899,000',
+            imagen: ''
         },
         {
             id: 3,
             name: 'Apple',
-            referencia: 'MacBook', 
-            precio: '$1.000.000'
+            referencia: 'Zenbook Pro 16”X OLED (UX7602)', 
+            precio: '15,799,000',
         },
         {
             id: 4,
             name: 'Apple',
-            referencia: 'MacBook', 
-            precio: '$1.000.000'
+            referencia: 'ROG Zephyrus M16” (2022) GU603ZE-K8040W', 
+            precio: '8,599,000',
+            imagen: ''
         },
         {
             id: 5,
             name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
+            referencia: 'acer Intel corei3', 
+            precio: '1,899,000',
+            imagen: ''
         },
         {
             id: 6,
             name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
+            referencia: 'HP PAVILION', 
+            precio: '2,099,000',
+            imagen: ''
         },
         {
             id: 7,
             name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
+            referencia: 'LENOVO IDEAPAD 3', 
+            precio: '1,499,000',
+            imagen: ''
         },
         {
             id: 8,
             name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
+            referencia: 'ASUS VIVOBOOK', 
+            precio: '2,799.000',
+            imagen: ''
         },
         {
             id: 9,
             name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
-        },
-        {
-            id: 10,
-            name: 'Samsung',
-            referencia: 'Galaxy', 
-            precio: '$1.000.000'
+            referencia: 'MACBOOK AIR', 
+            precio: '4,749,000',
+            imagen: ''
         }
-
     ]
 
     const itemsComputadores = computador.map((pc) => {
-        if(props.mostrar){
+
             return <li key={pc.id}>
-                Marca: { pc.name }, Referencia: { pc.referencia }, Precio { pc.precio }
+            { pc.name } { pc.referencia } { pc.precio } {pc.imagen}
             </li>
-        }
+        
     })
 
     //Zona de HTML

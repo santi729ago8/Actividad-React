@@ -1,5 +1,5 @@
 {
-  "name": "csl-tech-store",
+  "name": "sesion-4-navegacion-componentes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
-    "sweetalert": "^2.1.2"
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
