@@ -7,45 +7,50 @@ nav {
 
 
 nav ul {
-gap: 30px;
-float: right;
-margin-right: 20px;  
+    gap: 30px;
+    float: right;
+    margin-right: 20px;
 }
 
 nav ul li {
-display: inline-block;
-line-height: 80px;
-margin: 0 5px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 
 nav ul li a {
-color: white;
-font-size: 17px;
-padding: 10px 13px;
-border-radius: 3px;
-text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    padding: 10px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-a.active, a:hover {
-background: rgb(89, 221, 95);
-transition: 0.5s;
+a.active,
+a:hover {
+    background: rgb(89, 221, 95);
+    transition: 0.5s;
 }
 
 .checkbtn {
-font-size: 30px;
-color: white;
-float: right;
-line-height: 80px;
-margin-right: 40px;
-cursor: pointer;
-display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 #check {
-display: none;
+    display: none;
 }
 
-.logo-1{
-    height: 100px;
-    width: 100px;   
+.logo-1 {
+    height: 85px;
+    width: 90px;
+}
+
+.categorias {
+    justify-self: left;
 }

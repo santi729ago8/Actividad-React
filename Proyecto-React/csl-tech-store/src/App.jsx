@@ -4,9 +4,13 @@ import React from 'react'
 import alert from 'sweetalert'
 import swal from 'sweetalert'
 import Home from './components/Home'
-import Productos from './components/Productos'
 import Carrito from './components/Carrito'
 import Navbar from "./components/Navbar"
+import MiCarro from './components/MiCarro'
+import Registrate from './components/Registrate'
+import CartasCelulares from './components/CartasCelulares'
+import CartasComputadores from './components/CartasComputadores'
+import CartasTelevisores from './components/CartasTelevisores'
 
 
 
@@ -24,15 +28,19 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div >
 
-    <div>
+    <div >
       <Router>
         <Navbar/>
         <Routes>
           <Route path="/" element={ <Home/> }/>
-          <Route path="/productos" element={ <Productos/> }/>
+          <Route path="/Registrate" element={ <Registrate/> }/>
           <Route path="/carrito" element={ <Carrito/> }/>
+          <Route path="/MiCarro" element={ <MiCarro/> }/>
+          <Route path="/CartasCelulares" element={ <CartasCelulares/> }/>
+          <Route path="/CartasComputadores" element={ <CartasComputadores/> }/>
+          <Route path="/CartasTelevisores" element={ <CartasTelevisores/> }/>
         </Routes>
       </Router>
     </div>

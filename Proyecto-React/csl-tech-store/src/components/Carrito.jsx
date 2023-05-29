@@ -3,17 +3,18 @@ import Celulares from './Celulares'
 import Televisores from './Televisores'
 import Computadores from './Computadores'
 
+
 const Carrito = () => {
 
     return(
-        <div>
-            <div>
+        <div className="contenedor-productos" >
+            <div className="contendor-celulares">
                 <Celulares />
             </div>
-            <div>
+            <div className="contendor-televisores">
                 <Televisores />
             </div>
-            <div>
+            <div className="contendor-computadores">
                 <Computadores />
             </div>
         </div>
