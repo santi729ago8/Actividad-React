@@ -1,10 +1,13 @@
 import React from 'react'
 import Computadores from './Computadores'
 
-const CartasComputadores = () => {
+
+const CartasComputadores = ({agregarDatos}) => {
     return (
-        <div>
-            <Computadores />
+        <div className='GeneralCelulares'>
+        <div className='CartaCelulares'>
+            <Computadores agregarDatos={agregarDatos} />
+        </div>
         </div>
     )
 }

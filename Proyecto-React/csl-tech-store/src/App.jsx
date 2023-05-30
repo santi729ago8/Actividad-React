@@ -12,20 +12,21 @@ import CartasCelulares from './components/CartasCelulares'
 import CartasComputadores from './components/CartasComputadores'
 import CartasTelevisores from './components/CartasTelevisores'
 import ComponenteSesion3 from './../src/components/ComponenteSesion3'
+import './assets/css/Celulares.css'
+
 
 
 
 const App = () => {
 
     const [carrito, setCarrito] = useState([])
+
     const carritoDeCompras = (datosCarrito) => {
-    setCarrito([{
-            id: 9,
-            name: 'Samsung  ',
-            referencia: 'Galaxy A54 5G',
-            precio: '2.399.000',
-            imagen: Nuevo 
-    }])
+      setCarrito([
+        datosCarrito,
+        ...carrito
+      ])
+      console.log({ carrito });
     }
 
   return (
@@ -37,9 +38,9 @@ const App = () => {
           <Route path="/" element={ <Home/> }/>
           <Route path="/Registrate" element={ <Registrate/> }/>
           <Route path="/carrito" element={ <Carrito/> }/>
-          <Route path="/MiCarro" element={ <MiCarro/> }/>
-          <Route path="/CartasCelulares" element={ <CartasCelulares/> }/>
-          <Route path="/CartasComputadores" element={ <CartasComputadores/> }/>
+          <Route path="/MiCarro" element={ <MiCarro carrito={carrito}  /> }/>
+          <Route path="/CartasCelulares" element={ <CartasCelulares agregarDatos={carritoDeCompras} /> }/>
+          <Route path="/CartasComputadores" element={ <CartasComputadores agregarDatos={carritoDeCompras}/> }/>
           <Route path="/CartasTelevisores" element={ <CartasTelevisores/> }/>
         </Routes>
       </Router>
