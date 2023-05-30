@@ -1,5 +1,5 @@
 nav {
-    background: rgb(89, 221, 95);
+    background: rgb(38, 71, 141);
     height: 80px;
     width: 100%;
 }
@@ -27,10 +27,11 @@ nav ul li a {
 }
 
 a.active,
-a:hover {
-    background: rgb(89, 221, 95);
-    transition: 0.5s;
+a{
+    color: white;
+    font-weight: bold;
 }
+
 
 .checkbtn {
     font-size: 30px;
@@ -42,9 +43,6 @@ a:hover {
     display: none;
 }
 
-#check {
-    display: none;
-}
 
 .logo-1 {
     height: 85px;

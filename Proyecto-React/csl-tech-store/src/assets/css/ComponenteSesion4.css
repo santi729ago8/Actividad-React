@@ -1,0 +1,36 @@
+.titulosesion-4{
+    color: rgb(153, 215, 29);
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    text-shadow: rgb(254, 254, 254) 2px 2px;
+    font-weight: bold;
+}
+.textoImagen{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 30px;
+}
+.imagenDiagonal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.tamañoImagen1{
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+    justify-self: right;
+    box-shadow: 10px 20px 20px rgba(8, 6, 6, 0.7);
+}
+.tamañoImagen2{
+    width: 160px;
+    height: 120px;
+    border: outset;
+    box-shadow: 10px 20px 20px rgb(51, 53, 47);
+}
+.textoSesion4{
+    font-size: 17px;
+    text-align: justify;
+}

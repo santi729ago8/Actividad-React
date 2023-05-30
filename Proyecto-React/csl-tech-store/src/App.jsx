@@ -11,25 +11,15 @@ import Registrate from './components/Registrate'
 import CartasCelulares from './components/CartasCelulares'
 import CartasComputadores from './components/CartasComputadores'
 import CartasTelevisores from './components/CartasTelevisores'
+import ComponenteSesion3 from './../src/components/ComponenteSesion3'
 
 
 
 const App = () => {
-  const mostrarAlerta = () => {
-    swal({
-      title:'Bienvenido',
-      text:'¿Quieres recibir las últimas novedades y las ofertas más ardientes?',
-      icon:'warning',
-      buttons: ['No', 'Sí']
-    }).then(respuesta => {
-      if (respuesta) {
-      window.location='https://marketing4ecommerce.co/almacenes-alkosto-analisis/';
-    }})
-  }
+
 
   return (
     <div >
-
     <div >
       <Router>
         <Navbar/>
@@ -43,11 +33,12 @@ const App = () => {
           <Route path="/CartasTelevisores" element={ <CartasTelevisores/> }/>
         </Routes>
       </Router>
-    </div>
 
-      <div className='app'>
-        <button onClick={mostrarAlerta()}></button>
-      </div>
+    </div>
+            <div>
+                <ComponenteSesion3 />
+            </div>
+
     </div>
 
 

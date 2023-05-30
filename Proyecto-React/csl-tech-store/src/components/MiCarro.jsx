@@ -1,9 +1,9 @@
 import React from 'react'
 
 const MiCarro = () => {
+
     return (
-        <div>
-            <h1>Mi Carro</h1></div>
+        <div>hola, soy mi carro</div>
     )
 }
 export default MiCarro
