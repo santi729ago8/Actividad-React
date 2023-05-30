@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import React from 'react'
+import React, { useState } from 'react'
 import alert from 'sweetalert'
 import swal from 'sweetalert'
 import Home from './components/Home'
@@ -17,6 +17,16 @@ import ComponenteSesion3 from './../src/components/ComponenteSesion3'
 
 const App = () => {
 
+    const [carrito, setCarrito] = useState([])
+    const carritoDeCompras = (datosCarrito) => {
+    setCarrito([{
+            id: 9,
+            name: 'Samsung  ',
+            referencia: 'Galaxy A54 5G',
+            precio: '2.399.000',
+            imagen: Nuevo 
+    }])
+    }
 
   return (
     <div >

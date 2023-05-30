@@ -81,6 +81,11 @@ const Celulares = () => {
         }
     ]
 
+    const agregarCarrito = (id) => {
+        const data=celular.find(item => item.id === id)
+        console.log(data);
+    }
+
     const itemsCelulares = celular.map((cell) => {
         
             return <div className="Card" key={cell.id}>
@@ -88,7 +93,7 @@ const Celulares = () => {
                 <img className="imagen" src={cell.imagen}/> 
                 <p className="Referencia" >{cell.referencia }</p> 
                 <h3 className="Precio" >{cell.precio}</h3>
-                <button className="Agregar" >Agregar al Carrito</button> 
+                <button onClick={()=>agregarCarrito(cell.id)} className="Agregar" >Agregar al Carrito</button>
             </div>
         
     })
