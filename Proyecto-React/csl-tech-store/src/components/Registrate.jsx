@@ -4,123 +4,123 @@ import './../assets/css/Registrate.css'
 
 const Registrate = () => {
     return (
-    <div className="formulario">
-    <div>
-        <h2 className='H2Formulario'>Formulario de Registro</h2>
-        <div>
-            <form>
+        <div className="formulario">
+            <div>
+                <h2 className='H2Formulario'>Formulario de Registro</h2>
                 <div>
-                <legend>Datos de la Cuenta</legend>
-                <label>Usuario:</label>
-                <input type="text" className="form-control" id="user" placeholder="Usuario"/>
-                <label >Correo Electronico:</label>
-                <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com"/>
-                <label >Contraseña:</label>
-                <input type="password" className="form-control" id="pass1" placeholder="Contraseña"/>
-                <label >Rep. Contraseña:</label>
-                <input type="password" className="form-control" id="pass2" placeholder="Repetir Contraseña"/>
-                <label >Código Postal:</label>
-                <input type="text" className="form-control" id="codigos" placeholder="Codigo Postal"/>
-                </div>
-                <div className='form-group'>
-                    <label>Legalidades:</label>
-                    <input type="checkbox" className="terminos" />Acepto los Terminos y condiciones
-                </div>
-                <input type="submit" className="botonRegistrar" value="Registrar" />
-                <input type="reset"  className="botonReset" value="Reiniciar" />
+                    <form>
+                        <div>
+                            <legend>Datos de la Cuenta</legend>
+                            <label>Usuario:</label>
+                            <input type="text" className="form-control" id="user" placeholder="Usuario" />
+                            <label >Correo Electronico:</label>
+                            <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com" />
+                            <label >Contraseña:</label>
+                            <input type="password" className="form-control" id="pass1" placeholder="Contraseña" />
+                            <label >Rep. Contraseña:</label>
+                            <input type="password" className="form-control" id="pass2" placeholder="Repetir Contraseña" />
+                            <label >Código Postal:</label>
+                            <input type="text" className="form-control" id="codigos" placeholder="Codigo Postal" />
+                        </div>
+                        <div className='form-group'>
+                            <label>Legalidades:</label>
+                            <input type="checkbox" className="terminos" />Acepto los Terminos y condiciones
+                        </div>
+                        <input type="submit" className="botonRegistrar" value="Registrar" />
+                        <input type="reset" className="botonReset" value="Reiniciar" />
 
-            </form>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
     )
     //Zona de Variables del formulario
-const usuario = document.querySelector('#user') 
-const correo = document.querySelector('#email') 
-const contraseña = document.querySelector('#pass1') 
-const repetirContraseña = document.querySelector('#pass2') 
-const codigos = document.querySelector('#codigos') 
-const terminos = document.querySelector('#terminos')
+    const usuario = document.querySelector('#user')
+    const correo = document.querySelector('#email')
+    const contraseña = document.querySelector('#pass1')
+    const repetirContraseña = document.querySelector('#pass2')
+    const codigos = document.querySelector('#codigos')
+    const terminos = document.querySelector('#terminos')
 
-//Zona de variables d elos botones
-const btnRegistrar = document.querySelector('#botonRegistrar')
-const btnReset = document.querySelector('#botonReset')
+    //Zona de variables d elos botones
+    const btnRegistrar = document.querySelector('#botonRegistrar')
+    const btnReset = document.querySelector('#botonReset')
 
-//Variable del formulario
-const formulario = document.getElementById('myForm')
+    //Variable del formulario
+    const formulario = document.getElementById('myForm')
 
-//Zona de las funciones
-const validarDatos = () => {
-    if(usuario.value == ''){
-        usuario.style.border = '2px solid red'
-    } else {
-        localStorage.setItem('nombre', usuario.value)
-        usuario.style.border = 'none'
-    }
-    
-    if(correo.value == ''){
-        correo.style.border = '2px solid red'
-    }else{
-        localStorage.setItem('correo', correo.value)
-        correo.style.border = 'none'
-    }
+    //Zona de las funciones
+    const validarDatos = () => {
+        if (usuario.value == '') {
+            usuario.style.border = '2px solid red'
+        } else {
+            localStorage.setItem('nombre', usuario.value)
+            usuario.style.border = 'none'
+        }
 
-    if(contraseña.value == ''){
-        contraseña.style.border = '2px solid red'
-    }else{
-        localStorage.setItem('contraseña', contraseña.value)
-        contraseña.style.border = 'none'
-    }
+        if (correo.value == '') {
+            correo.style.border = '2px solid red'
+        } else {
+            localStorage.setItem('correo', correo.value)
+            correo.style.border = 'none'
+        }
 
-    if(contraseña.value != repetirContraseña.value){
-        repetirContraseña.style.border = '2px solid red'
-        alert('Hey!! las contraseñas tienen que ser iguales')
-    }else{
-        if(repetirContraseña.value == ''){
+        if (contraseña.value == '') {
+            contraseña.style.border = '2px solid red'
+        } else {
+            localStorage.setItem('contraseña', contraseña.value)
+            contraseña.style.border = 'none'
+        }
+
+        if (contraseña.value != repetirContraseña.value) {
             repetirContraseña.style.border = '2px solid red'
-        }else{
-            localStorage.setItem('repetir contraseña', repetirContraseña.value)
-            repetirContraseña.style.border = 'none'
+            alert('Hey!! las contraseñas tienen que ser iguales')
+        } else {
+            if (repetirContraseña.value == '') {
+                repetirContraseña.style.border = '2px solid red'
+            } else {
+                localStorage.setItem('repetir contraseña', repetirContraseña.value)
+                repetirContraseña.style.border = 'none'
+            }
         }
-    }
-    
-    if(codigos.value == ''){
-        codigos.style.border = '2px solid red'
-    }else{
-        if(typeof Number(codigos.value) != 'number'){
+
+        if (codigos.value == '') {
             codigos.style.border = '2px solid red'
-            alert('Hey!! En codigo postal solo puedes colocar numeros')
-        }else{
-            console.log()
-            localStorage.setItem('codigo postal', codigos.value)
-            codigos.style.border = 'none'
+        } else {
+            if (typeof Number(codigos.value) != 'number') {
+                codigos.style.border = '2px solid red'
+                alert('Hey!! En codigo postal solo puedes colocar numeros')
+            } else {
+                console.log()
+                localStorage.setItem('codigo postal', codigos.value)
+                codigos.style.border = 'none'
+            }
+        }
+
+        if (!terminos.checked) {
+            alert('Debes aceptar los terminos y condiciones')
+        } else {
+            console.log(terminos.checked)
         }
     }
 
-    if(!terminos.checked){
-        alert('Debes aceptar los terminos y condiciones')
-    }else{
-        console.log(terminos.checked)
-    }
-}
 
+    //Zona de los eventos
+    btnRegistrar.addEventListener('click', (evento) => {
+        evento.preventDefault()
+        validarDatos()
+    })
 
-//Zona de los eventos
-btnRegistrar.addEventListener('click', (evento) => {
-    evento.preventDefault()
-    validarDatos()
-})
-
-btnReset.addEventListener('click', () => {
-    usuario.value = ''
-    correo.value = ''
-    contraseña.value = ''
-    repetirContraseña.value = ''
-    codigos.value = ''
-    terminos.checked = false
-    localStorage.clear()
-})
+    btnReset.addEventListener('click', () => {
+        usuario.value = ''
+        correo.value = ''
+        contraseña.value = ''
+        repetirContraseña.value = ''
+        codigos.value = ''
+        terminos.checked = false
+        localStorage.clear()
+    })
 }
 
 export default Registrate

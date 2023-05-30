@@ -10,19 +10,19 @@ const ComponenteSesion2 = () => {
         <div>
             <div className='contenedor-2'>
                 <div className='animate__animated animate__heartBeat'>
-                <h2 className='tituloC2' > Ofertas Destacadas</h2>
+                    <h2 className='tituloC2' > Ofertas Destacadas</h2>
                 </div>
-                
+
             </div>
             <div className='contenedor-sesion2'>
                 <div>
-                <a href="./cartasCelulares"><img className='imagenPromocion' src={ofertaCelular} /></a>
+                    <a href="./cartasCelulares"><img className='imagenPromocion' src={ofertaCelular} /></a>
                 </div>
                 <div>
-                <a href="./cartasComputadores"><img className='imagenPromocion' src={ofertaComputador}  /></a>
+                    <a href="./cartasComputadores"><img className='imagenPromocion' src={ofertaComputador} /></a>
                 </div>
                 <div>
-                <a href="./cartasTelevisores"><img className='imagenPromocion' src={ofertaTelevisor}  /></a>
+                    <a href="./cartasTelevisores"><img className='imagenPromocion' src={ofertaTelevisor} /></a>
                 </div>
             </div>
         </div>

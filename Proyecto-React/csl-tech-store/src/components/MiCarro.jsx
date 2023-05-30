@@ -5,7 +5,7 @@ const MiCarro = ({ carrito }) => {
 
     let totalCompra = 0
 
-    carrito.map (item => {
+    carrito.map(item => {
         totalCompra += Number(item.precio)
     })
 
@@ -13,12 +13,12 @@ const MiCarro = ({ carrito }) => {
         <>
 
             {
-                carrito.map( (item, index)  => (
-                    <CardCarrito key={ index } cell={ item } mostrarBoton={ false } />
+                carrito.map((item, index) => (
+                    <CardCarrito key={index} cell={item} mostrarBoton={false} />
                 ))
             }
 
-        x    <h1>Total: $ { totalCompra }</h1>
+            <h1>Total: $ {totalCompra}</h1>
 
         </>
     )

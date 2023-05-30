@@ -16,9 +16,9 @@ const ComponenteSesion3 = () => {
                 <li className="footer_li"> <a href="#" className="footer_a" title="Texto"></a></li>
                 <li className="footer_li"> <a href="#" className="footer_a" title="Texto">Legales promocionales</a></li>
             </ul>
-            
-                
-            
+
+
+
         </div>
     )
 }

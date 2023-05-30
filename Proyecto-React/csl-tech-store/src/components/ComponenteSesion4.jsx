@@ -15,8 +15,8 @@ const ComponenteSesion4 = () => {
                     El principal desafío que tenía la compañía era fortalecer su canal e-commerce, ya que con el paso del tiempo y la evolución del mercado hacia lo digital, las necesidades de este fueron creciendo y requiriendo la ayuda de expertos.</p>
                 <div className='imagenDiagonal'>
                     <img className='tamañoImagen1' src={imagen1Sesion4} />
-                    <span/>
-                    <span/>
+                    <span />
+                    <span />
                     <img className='tamañoImagen2' src={imagen2Sesion4} />
                 </div>
             </div>

@@ -4,7 +4,6 @@ import ComponenteSesion1 from './ComponenteSesion1'
 import ComponenteSesion2 from './ComponenteSesion2'
 import ComponenteSesion4 from './ComponenteSesion4'
 import ComponenteSesion5 from './ComponenteSesion5'
-import ComponenteSesion6 from './ComponenteSesion6'
 import 'animate.css';
 
 const Home = () => {
@@ -24,9 +23,11 @@ const Home = () => {
 
     return (
         <div>
+
             <div className='app'>
                 <span onClick={mostrarAlerta()}></span>
             </div>
+
             <div>
                 <ComponenteSesion1 />
             </div>
@@ -49,15 +50,7 @@ const Home = () => {
                 <ComponenteSesion5 />
             </div>
 
-            <div>
-                <ComponenteSesion6 />
-            </div>
-
-
-
         </div>
-
-
     )
 }
 

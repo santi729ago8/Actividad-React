@@ -1,10 +1,12 @@
 import React from 'react'
 import Televisores from './Televisores'
 
-const CartasTelevisores = () => {
+const CartasTelevisores = ({ agregarDatos }) => {
     return (
-        <div>
-            <Televisores />
+        <div className='GeneralCelulares'>
+            <div className='CartaCelulares'>
+                <Televisores agregarDatos={agregarDatos} />
+            </div>
         </div>
     )
 }
