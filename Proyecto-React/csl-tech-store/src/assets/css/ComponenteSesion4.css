@@ -20,9 +20,9 @@
 .tamañoImagen1{
     width: 160px;
     height: 120px;
-    border-radius: 10px;
+    border: outset;
     justify-self: right;
-    box-shadow: 10px 20px 20px rgba(8, 6, 6, 0.7);
+    box-shadow: 10px 20px 20px rgb(51, 53, 47);
 }
 .tamañoImagen2{
     width: 160px;

@@ -3,16 +3,16 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: black;
+    background: rgb(19, 40, 83);
     border-radius: 4px;
     padding-left: 30px;
     list-style: none;
+    text-align: center;
 
 }
 
 .footer{
     color: aliceblue;
-    
 }
 .footer_a{
     color: white;

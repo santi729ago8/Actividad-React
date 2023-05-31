@@ -1,3 +1,11 @@
+.divisionGeneral{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+}
+
 .Card{
     background-color: rgb(211, 138, 138);
     width: 175px;
@@ -9,6 +17,7 @@
     border-radius: 6px;
     box-shadow: 0px 0px 7px 0px rgb(55, 41, 175) inset;
 }
+
 .Marca{
     color: rgb(0, 0, 0);
     justify-self: center;
@@ -24,13 +33,21 @@
     color: rgb(235, 20, 20);
     justify-self: center;
 }
+
 .Agregar{
     background-color: rgb(83, 73, 214);
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 .imagen{
-    width: 100px;
+    width: 120px;
     height: 120px;
     justify-self: center;
 }
+
+.Card:hover{
+    zoom: 150%;
+}
+
+

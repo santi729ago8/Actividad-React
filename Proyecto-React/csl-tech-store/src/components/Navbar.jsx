@@ -14,14 +14,19 @@ const Navbar = () => {
                     <NavLink to="/MiCarro"><li>Mi Carro</li></NavLink>
                     <NavLink to="/Registrate"><li>Registrate</li></NavLink>
                 </ul>
-                <ul className="categorias">
-                    <NavLink to="/MiCarro"><li>Contenido</li></NavLink>
+                <ul > 
+                    <li>
+                        <div>
+                            <span>CONTENIDO</span>
+                            <ul id="menubar">
+                        <NavLink to="/CartasCelulares"><li>Celulares</li></NavLink>
+                        <NavLink to="/CartasComputadores"><li >Computadores</li></NavLink>
+                        <NavLink to="/CartasTelevisores"><li>Televisores</li></NavLink>
+                        </ul>
+                        </div>
+                    </li>
                 </ul>
-                <ul className="listados-productos">
-                    <NavLink to="/CartasCelulares"><li>Celulares</li></NavLink>
-                    <NavLink to="/CartasComputadores"><li >Computadores</li></NavLink>
-                    <NavLink to="/CartasTelevisores"><li>Televisores</li></NavLink>
-                </ul>
+
             </nav>
         </div>
 

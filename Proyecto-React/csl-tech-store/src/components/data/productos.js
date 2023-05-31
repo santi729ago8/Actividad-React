@@ -1,6 +1,6 @@
 import Celular1 from '../../assets/img/celulares/ip-11.jpg'
 import Celular2 from '../../assets/img/celulares/ip-12.jpg'
-import Celular3 from '../../assets/img/celulares/ip-13-pro-max.jpg'
+import Celular3 from '../../assets/img/celulares/Iphone13ProMax.png'
 import Nuevo from '../../assets/img/celulares/ip-13-nuevo.png'
 import tele from '../../assets/img/televisores/televisor-1.png'
 import pc1 from '../../assets/img/computadores/COMPUTADOR-1.png'
@@ -80,70 +80,70 @@ export const celulares = [
 
 export const computadores = [
     {
-        id: 0,
+        id: 10,
         name: 'APPLE',
         referencia: 'Yoga 9i 8va Gen (14”, Intel)', 
         precio: 8699000,
         imagen: pc1           
     },
     {
-        id: 1,
+        id: 11,
         name: 'APPLE',
         referencia: 'ThinkPad P15 (15.6”, Intel)', 
         precio: 599900,
         imagen: pc1           
     },
     {
-        id: 2,
+        id: 12,
         name: 'APPLE',
         referencia: 'ASUS Vivobook Pro 15” OLED', 
         precio: 5899000,
         imagen: pc1           
     },
     {
-        id: 3,
+        id: 13,
         name: 'APPLE',
         referencia: 'Zenbook Pro 16”X OLED (UX7602)', 
         precio: 15799000,
         imagen: pc1           
     },
     {
-        id: 4,
+        id: 14,
         name: 'APPLE',
         referencia: 'ROG Zephyrus M16” (2022) GU603ZE-K8040W', 
         precio: 8599000,
         imagen: pc1           
     },
     {
-        id: 5,
+        id: 15,
         name: 'ACER',
         referencia: 'acer Intel corei3', 
         precio: 1899000,
         imagen: pc1           
     },
     {
-        id: 6,
+        id: 16,
         name: 'Samsung',
         referencia: 'HP PAVILION', 
         precio: 2099700,
         imagen: pc1           
     },
     {
-        id: 7,
+        id: 17,
         name: 'LENOVO',
         referencia: 'LENOVO IDEAPAD 3', 
         precio: 1499000,
         imagen: pc1           
     },
     {
-        id: 8,
+        id: 18,
         name: 'ASUS',
         referencia: 'ASUS VIVOBOOK', 
         precio: 2799000,
         imagen: pc1           
     },
     {
-        id: 9,
+        id: 19,
         name: 'APPLE',
         referencia: 'MACBOOK AIR', 
         precio: 4749000,
@@ -153,70 +153,70 @@ export const computadores = [
 
 export const televisores = [
     {
-        id: 0,
+        id: 20,
         name: 'LG',
         referencia: 'Lg 65 Pulgadas LED 4K HD Negro',
         precio: 2649900,
         imagen: tele
     },
     {
-        id: 1,
+        id: 21,
         name: 'LG',
         referencia: 'Lg 43 Pulgadas 4k Smart Tv Uhd 43uq751c0sf',
         precio: 2052900,
         imagen: tele
     },
     {
-        id: 2,
+        id: 22,
         name: 'LG',
         referencia: 'LG 70 Pulgadas 4K UHD 70UQ8050PSB Negro',
         precio: 3299900,
         imagen: tele
     },
     {
-        id: 3,
+        id: 23,
         name: 'SAMSUMG',
         referencia: 'Samsung 32 pulgadas Hd Un32t4300',
         precio: 1030900,
         imagen: tele
     },
     {
-        id: 4,
+        id: 24,
         name: 'INTEC',
         referencia: 'INTEC 32 pulgadas Hd Smart Wifi',
         precio: 634900,
         imagen: tele
     },
     {
-        id: 5,
+        id: 25,
         name: 'HYUNDAY',
         referencia: 'HYUNDAY 32 Pulgadas HD ANDROID HYLED3248AIM Gris',
         precio: 880.900,
         imagen: tele
     },
     {
-        id: 6,
+        id: 26,
         name: 'CHALLENGER',
         referencia: 'CHALLENGER 40 Pulgadas LED 40TO65 BT Android',
         precio: 1009900,
         imagen: tele
     },
     {
-        id: 7,
+        id: 27,
         name: 'HISENSE',
         referencia: 'HISENSE Led 43 pulgadas 108cm Uhd 4k A6ga Smart Tv',
         precio: 1444900,
         imagen: tele
     },
     {
-        id: 8,
+        id: 28,
         name: 'SAMSUMG',
         referencia: 'SAMSUNG 50 Pulgadas UHD 4K UN50BU8000KXZL Negro',
         precio: 1836900,
         imagen: tele
     },
     {
-        id: 9,
+        id: 29,
         name: 'EXCLUSIV',
         referencia: 'EXCLUSIV 50 Pulgadas LED UHD 4K Android Negro',
         precio: 1529900,

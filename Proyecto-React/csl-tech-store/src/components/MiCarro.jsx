@@ -1,26 +1,38 @@
-
+import { useState } from 'react'
 import { CardCarrito } from "./CardCarrito";
+import './../assets/css/MiCarro.css'
 
 const MiCarro = ({ carrito }) => {
 
+    const [data, setData] = useState(carrito)
+
+    let datosCarrito = data
     let totalCompra = 0
 
-    carrito.map(item => {
+    datosCarrito.map(item => {
         totalCompra += Number(item.precio)
     })
+
+    const eliminarItemCarrito = (id) => {
+        datosCarrito = datosCarrito.filter(item => item.id !== id)
+        setData(datosCarrito)
+    }
 
     return (
         <>
 
             {
-                carrito.map((item, index) => (
-                    <CardCarrito key={index} cell={item} mostrarBoton={false} />
+                data.map((item, index) => (
+                    <CardCarrito key={index} cell={item} mostrarBoton={false} eliminarItemCarrito={ eliminarItemCarrito } />
                 ))
             }
+            <div className='divTotalCompra'>
+            <h1 className='totalCompra'>Total: $ {totalCompra}</h1>
+            </div>
 
-            <h1>Total: $ {totalCompra}</h1>
+
 
         </>
     )
 }
-export default MiCarro
+export default MiCarro 

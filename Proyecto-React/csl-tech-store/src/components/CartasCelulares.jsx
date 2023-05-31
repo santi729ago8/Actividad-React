@@ -1,14 +1,11 @@
 import React from 'react'
 import Celulares from './Celulares'
-import './../assets/css/cssCartas/CartasCelulares.css'
 
 const CartasCelulares = ({ agregarDatos }) => {
     return (
-        <div className='GeneralCelulares'>
-            <div className='CartaCelulares'>
+            <div>
                 <Celulares agregarDatos={agregarDatos} />
             </div>
-        </div>
     )
 }
 

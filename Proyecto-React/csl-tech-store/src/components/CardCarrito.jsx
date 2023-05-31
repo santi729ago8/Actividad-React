@@ -1,7 +1,7 @@
 
 import { celulares, computadores, televisores } from './data/productos'
 
-export const CardCarrito = ({ cell, mostrarBoton, agregarDatos, action }) => {
+export const CardCarrito = ({ cell, mostrarBoton, agregarDatos, action, eliminarItemCarrito = () => {} }) => {
 
     const agregarCarrito = (id) => {
         let data = {}
@@ -19,17 +19,25 @@ export const CardCarrito = ({ cell, mostrarBoton, agregarDatos, action }) => {
         agregarDatos(data)
     }
 
+    const handleEliminarItemCarrito = (id) => {
+        console.log({ id })
+        eliminarItemCarrito(id)
+    }
+
     return (
-        <div className="Card" key={cell.id}>
-            <h2 className="Marca" >{cell.name}</h2>
-            <img className="imagen" src={cell.imagen} />
-            <p className="Referencia" >{cell.referencia}</p>
-            <h3 className="Precio" > $ {cell.precio}</h3>
-            {
-                mostrarBoton
-                    ? <button onClick={() => agregarCarrito(cell.id)} className="Agregar" >Agregar al Carrito</button>
-                    : ""
-            }
+        <div className='divisionGeneral'>
+            <div className="Card" key={cell.id}>
+                <h2 className="Marca" >{cell.name}</h2>
+                <img className="imagen" src={cell.imagen} />
+                <p className="Referencia" >{cell.referencia}</p>
+                <h3 className="Precio" > $ {cell.precio}</h3>
+                {
+                    mostrarBoton
+                        ? <button onClick={() => agregarCarrito(cell.id)} className="Agregar" >Agregar al Carrito</button>
+                        : <button onClick={() => handleEliminarItemCarrito(cell.id)} className="Agregar" >Eliminar Producto</button>
+                }
+            </div>
         </div>
+
     )
 }

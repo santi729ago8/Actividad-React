@@ -4,11 +4,9 @@ import Computadores from './Computadores'
 
 const CartasComputadores = ({ agregarDatos }) => {
     return (
-        <div className='GeneralCelulares'>
-            <div className='CartaCelulares'>
+            <div>
                 <Computadores agregarDatos={agregarDatos} />
             </div>
-        </div>
     )
 }
 
