@@ -1,5 +1,4 @@
 import React from 'react'
-import './../assets/css/CartaProductos.css'
 import { computadores } from './data/productos'
 import { CardCarrito } from "./CardCarrito";
 
@@ -17,9 +16,9 @@ const Computadores = ({ agregarDatos }) => {
     })
 
     return (
-        <ul>
+        <div className='product-list'>
             {itemsComputadores}
-        </ul>
+        </div>
     )
 }
 export default Computadores

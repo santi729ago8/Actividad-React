@@ -3,7 +3,7 @@ import Televisores from './Televisores'
 
 const CartasTelevisores = ({ agregarDatos }) => {
     return (
-            <div>
+            <div >
                 <Televisores agregarDatos={agregarDatos} />
             </div>
     )

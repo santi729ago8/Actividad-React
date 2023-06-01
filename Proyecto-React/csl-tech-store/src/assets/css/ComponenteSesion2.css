@@ -4,21 +4,23 @@
     padding-right: 30px;
 }
 .contenedor-sesion2{
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-around;
 }
 .imagenPromocion{
-    width: 400px;
-    height: 400px;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 410px;
+    height: 320px;
 }
 
 .tituloC2{
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
     color: rgba(234, 25, 25, 0.91);
-    text-shadow: rgb(221, 130, 130) 1px -1px;
-    font-weight: bold;
-    
+    text-shadow: rgb(212, 143, 143) -2px -2px;    
 }
 

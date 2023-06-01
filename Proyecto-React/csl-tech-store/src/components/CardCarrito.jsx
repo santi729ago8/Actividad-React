@@ -24,12 +24,12 @@ export const CardCarrito = ({ cell, mostrarBoton, agregarDatos, action, eliminar
         eliminarItemCarrito(id)
     }
 
-    return (
-        <div className='divisionGeneral'>
+    return (    
             <div className="Card" key={cell.id}>
                 <h2 className="Marca" >{cell.name}</h2>
                 <img className="imagen" src={cell.imagen} />
                 <p className="Referencia" >{cell.referencia}</p>
+                <h5 className="PrecioAntes"> Antes $ {cell.antes}</h5>
                 <h3 className="Precio" > $ {cell.precio}</h3>
                 {
                     mostrarBoton
@@ -37,7 +37,5 @@ export const CardCarrito = ({ cell, mostrarBoton, agregarDatos, action, eliminar
                         : <button onClick={() => handleEliminarItemCarrito(cell.id)} className="Agregar" >Eliminar Producto</button>
                 }
             </div>
-        </div>
-
     )
 }

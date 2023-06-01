@@ -1,5 +1,4 @@
 import React from "react";
-import './../assets/css/CartaProductos.css'
 import { celulares } from './data/productos'
 import { CardCarrito } from "./CardCarrito";
 
@@ -21,7 +20,7 @@ const Celulares = ({ agregarDatos }) => {
 
     //Zona de HTML
     return (
-        <div>
+        <div className='product-list'>
             {itemsCelulares}
         </div>
     )

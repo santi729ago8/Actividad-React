@@ -1,11 +1,10 @@
 .titulosesion-4{
-    color: rgb(153, 215, 29);
-    font-size: 24px;
-    margin-top: 30px;
+    color: rgba(19, 54, 119, 0.849);
+    font-size: 30px;
+    margin-top: 50px;
     margin-left: 30px;
     margin-bottom: 15px;
-    text-shadow: rgb(254, 254, 254) 2px 2px;
-    font-weight: bold;
+    text-shadow: rgb(254, 254, 254) 4px 4px;
 }
 .textoImagen{
     display: grid;
@@ -31,6 +30,7 @@
     box-shadow: 10px 20px 20px rgb(51, 53, 47);
 }
 .textoSesion4{
-    font-size: 17px;
+    margin-top: 30px;
+    font-size: 20px;
     text-align: justify;
 }

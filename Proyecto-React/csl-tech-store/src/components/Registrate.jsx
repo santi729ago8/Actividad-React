@@ -1,126 +1,81 @@
-import React from 'react'
+import React, { useState } from "react";
 import './../assets/css/Registrate.css'
 
 
 const Registrate = () => {
-    return (
-        <div className="formulario">
-            <div>
-                <h2 className='H2Formulario'>Formulario de Registro</h2>
-                <div>
-                    <form>
-                        <div>
-                            <legend>Datos de la Cuenta</legend>
-                            <label>Usuario:</label>
-                            <input type="text" className="form-control" id="user" placeholder="Usuario" />
-                            <label >Correo Electronico:</label>
-                            <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com" />
-                            <label >Contraseña:</label>
-                            <input type="password" className="form-control" id="pass1" placeholder="Contraseña" />
-                            <label >Rep. Contraseña:</label>
-                            <input type="password" className="form-control" id="pass2" placeholder="Repetir Contraseña" />
-                            <label >Código Postal:</label>
-                            <input type="text" className="form-control" id="codigos" placeholder="Codigo Postal" />
-                        </div>
-                        <div className='form-group'>
-                            <label>Legalidades:</label>
-                            <input type="checkbox" className="terminos" />Acepto los Terminos y condiciones
-                        </div>
-                        <input type="submit" className="botonRegistrar" value="Registrar" />
-                        <input type="reset" className="botonReset" value="Reiniciar" />
+    const [nombre, setNombre] = useState("");
+    const [apellido, setApellido] = useState("");
+    const [correoElectronico, setCorreoElectronico] = useState("");
+    const [contraseña, setContraseña] = useState("");
+    const [repetirContraseña, setRepetirContraseña] = useState("")
+    const [fechaDeNacimiento, setFechaDeNacimiento] = useState("");
+    const [direccion, setDireccion] = useState("");
+    const [codigoPostal, setCodigoPostal] = useState("");
+    const [terminos, setTerminos] = useState(false) 
+    
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(`Nombre: ${nombre}\nApellido: ${apellido}\nCorreo electrónico: ${correoElectronico}\nContraseña: ${contraseña}\nRepetir Contraseña: ${repetirContraseña}\nFecha de Nacimiento: ${fechaDeNacimiento}\nDireccion: ${direccion}\nCodigo Postal: ${codigoPostal}`);
+    };
 
-                    </form>
-                </div>
-            </div>
-        </div>
+    const handleReset = () => {
+        setNombre('');
+        setApellido('');
+        setCorreoElectronico('');
+        setContraseña('');
+        setRepetirContraseña('');
+        setFechaDeNacimiento('');
+        setDireccion('');
+        setCodigoPostal('');
+        setTerminos(false);
+    };
 
-    )
-    //Zona de Variables del formulario
-    const usuario = document.querySelector('#user')
-    const correo = document.querySelector('#email')
-    const contraseña = document.querySelector('#pass1')
-    const repetirContraseña = document.querySelector('#pass2')
-    const codigos = document.querySelector('#codigos')
-    const terminos = document.querySelector('#terminos')
-
-    //Zona de variables d elos botones
-    const btnRegistrar = document.querySelector('#botonRegistrar')
-    const btnReset = document.querySelector('#botonReset')
-
-    //Variable del formulario
-    const formulario = document.getElementById('myForm')
-
-    //Zona de las funciones
-    const validarDatos = () => {
-        if (usuario.value == '') {
-            usuario.style.border = '2px solid red'
-        } else {
-            localStorage.setItem('nombre', usuario.value)
-            usuario.style.border = 'none'
-        }
-
-        if (correo.value == '') {
-            correo.style.border = '2px solid red'
-        } else {
-            localStorage.setItem('correo', correo.value)
-            correo.style.border = 'none'
-        }
-
-        if (contraseña.value == '') {
-            contraseña.style.border = '2px solid red'
-        } else {
-            localStorage.setItem('contraseña', contraseña.value)
-            contraseña.style.border = 'none'
-        }
-
-        if (contraseña.value != repetirContraseña.value) {
-            repetirContraseña.style.border = '2px solid red'
-            alert('Hey!! las contraseñas tienen que ser iguales')
-        } else {
-            if (repetirContraseña.value == '') {
-                repetirContraseña.style.border = '2px solid red'
-            } else {
-                localStorage.setItem('repetir contraseña', repetirContraseña.value)
-                repetirContraseña.style.border = 'none'
-            }
-        }
-
-        if (codigos.value == '') {
-            codigos.style.border = '2px solid red'
-        } else {
-            if (typeof Number(codigos.value) != 'number') {
-                codigos.style.border = '2px solid red'
-                alert('Hey!! En codigo postal solo puedes colocar numeros')
-            } else {
-                console.log()
-                localStorage.setItem('codigo postal', codigos.value)
-                codigos.style.border = 'none'
-            }
-        }
-
-        if (!terminos.checked) {
-            alert('Debes aceptar los terminos y condiciones')
-        } else {
-            console.log(terminos.checked)
+    const validarDatos = ()=> {
+        if(contraseña.value != repetirContraseña.value){
+            swal('Hey!! las contraseñas tienen que ser iguales')
         }
     }
 
+    return (
+        <form className="form" onSubmit={handleSubmit}>
+            
+            <h3 className="formReg">Formulario de Registro</h3>
 
-    //Zona de los eventos
-    btnRegistrar.addEventListener('click', (evento) => {
-        evento.preventDefault()
-        validarDatos()
-    })
+            <label className="labelsFormularios" >Nombres:</label>
+            <input required type="text" className="imputsFormulario" placeholder="Ingrese sus Nombres" value={nombre} onChange={(event) => setNombre(event.target.value)} />
 
-    btnReset.addEventListener('click', () => {
-        usuario.value = ''
-        correo.value = ''
-        contraseña.value = ''
-        repetirContraseña.value = ''
-        codigos.value = ''
-        terminos.checked = false
-        localStorage.clear()
-    })
+            <label className="labelsFormularios" >Apellidos:</label>
+            <input required type="text" className="imputsFormulario" placeholder="Ingrese sus Apellidos" value={apellido} onChange={(event) => setApellido(event.target.value)} />
+
+            <label className="labelsFormularios" >Correo Electrónico:</label>
+            <input required type="email" className="imputsFormulario" placeholder="Ingrese su E-mail" value={correoElectronico} onChange={(event) => setCorreoElectronico(event.target.value)} />
+
+            <label className="labelsFormularios" >Contraseña:</label>
+            <input required type="password" className="imputsFormulario" placeholder="Contraseña" value={contraseña} onChange={(event) => setContraseña(event.target.value)} />
+
+            <label className="labelsFormularios" >Rep. Contraseña:</label>
+            <input required type="password" className="imputsFormulario" placeholder="Repetir Contraseña" value={repetirContraseña} onChange={(event) => setRepetirContraseña(event.target.value)} />
+
+            <label className="labelsFormularios">Fecha de nacimiento:</label>
+            <input required type="date" className="imputsFormulario" placeholder="Fecha de nacimiento" value={fechaDeNacimiento} onChange={(event) => setFechaDeNacimiento(event.target.value)} />
+
+            <label className="labelsFormularios">Dirección:</label>
+            <input required type="text" className="imputsFormulario" placeholder="Dirección de residencia" value={direccion} onChange={(event) => setDireccion(event.target.value)} />
+
+            <label className="labelsFormularios" >Código Postal:</label>
+            <input required type="text" className="imputsFormulario" placeholder="Codigo Postal" value={codigoPostal} onChange={(event) => setCodigoPostal(event.target.value)} />
+            
+            <label>Legalidades:</label>
+            <input required type="checkbox" checked={terminos} className="terminos" value={terminos} onChange={(event) => setTerminos(!terminos)}/>Acepto los Terminos y condiciones
+
+            <div className="botones">
+            <input type="submit" className="boton" value="Registrar"/>
+            <button type="button" className="boton" onClick={handleReset}>Reiniciar</button>
+            </div>
+
+        </form>
+    );
 }
 
 export default Registrate

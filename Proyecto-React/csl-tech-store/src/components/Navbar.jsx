@@ -12,21 +12,14 @@ const Navbar = () => {
                 <ul >
                     <NavLink to="/"><li>Home</li></NavLink>
                     <NavLink to="/MiCarro"><li>Mi Carro</li></NavLink>
+                    <NavLink to="/Login"><li>Login</li></NavLink>
                     <NavLink to="/Registrate"><li>Registrate</li></NavLink>
                 </ul>
                 <ul > 
-                    <li>
-                        <div>
-                            <span>CONTENIDO</span>
-                            <ul id="menubar">
                         <NavLink to="/CartasCelulares"><li>Celulares</li></NavLink>
                         <NavLink to="/CartasComputadores"><li >Computadores</li></NavLink>
                         <NavLink to="/CartasTelevisores"><li>Televisores</li></NavLink>
-                        </ul>
-                        </div>
-                    </li>
                 </ul>
-
             </nav>
         </div>
 

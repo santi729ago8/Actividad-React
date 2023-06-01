@@ -19,9 +19,9 @@ const Televisores = ({ agregarDatos }) => {
     })
 
     return (
-        <ul>
+        <div className='product-list'>
             {itemsTelevisores}
-        </ul>
+        </div>
     )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import './../assets/css/ComponenteSesion2.css'
-import Nuevo from '../assets/img/celulares/ip-13-nuevo.png'
-import ofertaComputador from '../assets/img/computadores/COMPUTADOR-1.png'
-import ofertaTelevisor from '../assets/img/televisores/televisor-1.png'
+import ofertaCelular from '../assets/img/celulares/celularPromocion.png'
+import ofertaComputador from '../assets/img/computadores/computadorPromocion.png'
+import ofertaTelevisor from '../assets/img/televisores/televisorPromocion.png'
 
 
 const ComponenteSesion2 = () => {
@@ -16,7 +16,7 @@ const ComponenteSesion2 = () => {
             </div>
             <div className='contenedor-sesion2'>
                 <div>
-                    <a href="./cartasCelulares"><img className='imagenPromocion' src={Nuevo} /></a>
+                    <a href="./cartasCelulares"><img className='imagenPromocion' src={ofertaCelular} /></a>
                 </div>
                 <div>
                     <a href="./cartasComputadores"><img className='imagenPromocion' src={ofertaComputador} /></a>

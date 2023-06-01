@@ -5,8 +5,13 @@
 }
 .Bienvenido{
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 20px;
     text-align: center;
     text-shadow: rgba(135, 123, 146, 0.486) 7px 5px;
+}
+
+.parrafo-sesion1{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
