@@ -3,6 +3,7 @@ import './../assets/css/ComponenteSesion2.css'
 import ofertaCelular from '../assets/img/celulares/celularPromocion.png'
 import ofertaComputador from '../assets/img/computadores/computadorPromocion.png'
 import ofertaTelevisor from '../assets/img/televisores/televisorPromocion.png'
+import { NavLink } from 'react-router-dom';
 
 
 const ComponenteSesion2 = () => {
@@ -15,14 +16,14 @@ const ComponenteSesion2 = () => {
 
             </div>
             <div className='contenedor-sesion2'>
-                <div>
-                    <a href="./cartasCelulares"><img className='imagenPromocion' src={ofertaCelular} /></a>
+            <div>
+                    <NavLink to="/CartasCelulares"><img className='imagenPromocion' src={ofertaCelular}></img></NavLink>
                 </div>
                 <div>
-                    <a href="./cartasComputadores"><img className='imagenPromocion' src={ofertaComputador} /></a>
+                    <NavLink to="/CartasComputadores"><img className='imagenPromocion' src={ofertaComputador}></img></NavLink>
                 </div>
                 <div>
-                    <a href="./cartasTelevisores"><img className='imagenPromocion' src={ofertaTelevisor} /></a>
+                    <NavLink to="/CartasTelevisores"><img className='imagenPromocion' src={ofertaTelevisor}></img></NavLink>
                 </div>
             </div>
         </div>

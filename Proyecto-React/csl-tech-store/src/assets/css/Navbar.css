@@ -1,53 +1,70 @@
-nav {
-    background: rgb(38, 71, 141);
+.barraNavegacion {
+    background: rgb(19, 40, 83);
     height: 80px;
     width: 100%;
+    display: grid;
+    justify-content: space-around;
+
 }
 
-nav ul {
-    gap: 30px;
-    float: right;
-    margin-right: 20px;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 10px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-a.active,
-a{
-    color: white;
-    font-weight: bold;
-}
-
-
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
 
 .logo-1 {
-    margin-left: 30px;
+    margin-right: 30px;
     height: 80px;
     width: 80px;
 }
 
-.categorias {
-    justify-self: left;
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 10px;
+    color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background: rgb(19, 40, 83);
+    padding: 10px;
+    border-radius: 7px;
+    border-top: none;
+}
+
+.dropdown.open ul {
+    display: block;
+}
+
+.dropdown ul li {
+    margin: 5px 0;
+}
+
+.active {
+    font-weight: bold;
+}
+.imagenCarrito{
+    width: 50px;
+    height: 40px
 }

@@ -27,7 +27,20 @@ import id22 from '../../assets/img/computadores/id-22.png'
 import id23 from '../../assets/img/computadores/id-23.png'
 
 //Imagenes de Televisores
-import tele from '../../assets/img/televisores/televisor-1.png'
+import id24 from '../../assets/img/televisores/id-24.png'
+import id25 from '../../assets/img/televisores/id-25.png'
+import id26 from '../../assets/img/televisores/id-26.png'
+import id27 from '../../assets/img/televisores/id-27.png'
+import id28 from '../../assets/img/televisores/id-28.png'
+import id29 from '../../assets/img/televisores/id-29.png'
+import id30 from '../../assets/img/televisores/id-30.png'
+import id31 from '../../assets/img/televisores/id-31.png'
+import id32 from '../../assets/img/televisores/id-32.png'
+import id33 from '../../assets/img/televisores/id-33.png'
+import id34 from '../../assets/img/televisores/id-34.png'
+import id35 from '../../assets/img/televisores/id-35.png'
+
+
 
 
 
@@ -211,87 +224,87 @@ export const computadores = [
 export const televisores = [
     {
         id: 24,
-        name: 'LG',
-        referencia: '65” LED 4K HD Negro',
-        precio: 2649900,
-        imagen: tele
+        name: 'SONY',
+        referencia: '75" KD-75X80J 4K-UHD',
+        precio: 5999900,
+        imagen: id24,
     },
     {
         id: 25,
-        name: 'LG',
-        referencia: '43” 4k Smart Tv',
-        precio: 2052900,
-        imagen: tele
+        name: 'XIAOMI',
+        referencia: '43” P1 4K-UHD LED',
+        precio: 1399900,
+        imagen: id25,
     },
     {
         id: 26,
-        name: 'LG',
-        referencia: '70” 4K UHD Negro',
-        precio: 3299900,
-        imagen: tele
+        name: 'PHILIPS',
+        referencia: '65” 65PUT7906/57 4K-UHD',
+        precio: 2499900,
+        imagen: id26,
     },
     {
         id: 27,
-        name: 'SAMSUMG',
-        referencia: '32” Hd LED Negro',
-        precio: 1030900,
-        imagen: tele
+        name: 'TCL',
+        referencia: '32” 32S60A HD LED' ,
+        precio: 799900,
+        imagen: id27,
     },
     {
         id: 28,
-        name: 'INTEC',
-        referencia: '32” Hd Smart Wifi',
-        precio: 634900,
-        imagen: tele
+        name: 'SAMSUNG',
+        referencia: '60” 60BU8000 4K-UHD',
+        precio: 2399000,
+        imagen: id28,
     },
     {
         id: 29,
-        name: 'HYUNDAY',
-        referencia: '32” HD Android Gris',
+        name: 'SAMSUNG',
+        referencia: '65” QN65Q65BA 4K-UHD',
         precio: 880.900,
-        imagen: tele
+        imagen: id29,
     },
     {
         id: 30,
         name: 'CHALLENGER',
-        referencia: '40” LED BT Android',
-        precio: 1009900,
-        imagen: tele
+        referencia: '43” FHD LED Smart Tv',
+        precio: 1109900,
+        imagen: id30,
     },
     {
         id: 31,
-        name: 'HISENSE',
-        referencia: 'Led 43” 4k Smart Tv',
+        name: 'LG',
+        referencia: '70” 4k-UHD LED Smart Tv',
         precio: 1444900,
-        imagen: tele
+        imagen: id31,
     },
     {
         id: 32,
-        name: 'SAMSUMG',
-        referencia: '50” 4K  Ultra HD Negro',
+        name: 'LG',
+        referencia: '65” 4K-UHD LED Smart Tv',
         precio: 1836900,
-        imagen: tele
+        imagen: id32,
     },
     {
         id: 33,
-        name: 'EXCLUSIV',
-        referencia: '50” LED 4K Android Negro',
-        precio: 1529900,
-        imagen: tele
+        name: 'HYUNDAI',
+        referencia: '43” FHD LED Smart Tv',
+        precio: 1139900,
+        imagen: id33,
     },
     {
         id: 34,
-        name: 'SAMSUMG',
-        referencia: '50” 4K  Ultra HD Negro',
-        precio: 1836900,
-        imagen: tele
+        name: 'HYUNDAI',
+        referencia: '58” 4K-UHD LED Smart Tv',
+        precio: 1899900,
+        imagen: id34,
     },
     {
         id: 35,
-        name: 'EXCLUSIV',
-        referencia: '50” LED 4K Android Negro',
-        precio: 1529900,
-        imagen: tele
+        name: 'PANASONIC',
+        referencia: '32” HD LED Smart Tv',
+        precio: 799900,
+        imagen: id35,
     }
     
 ]

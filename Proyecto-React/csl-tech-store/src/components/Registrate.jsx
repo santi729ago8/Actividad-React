@@ -66,8 +66,9 @@ const Registrate = () => {
             <label className="labelsFormularios" >Código Postal:</label>
             <input required type="text" className="imputsFormulario" placeholder="Codigo Postal" value={codigoPostal} onChange={(event) => setCodigoPostal(event.target.value)} />
             
-            <label>Legalidades:</label>
-            <input required type="checkbox" checked={terminos} className="terminos" value={terminos} onChange={(event) => setTerminos(!terminos)}/>Acepto los Terminos y condiciones
+            <div>
+            <input required type="checkbox" checked={terminos} className="terminos" value={terminos} onChange={(event) => setTerminos(!terminos)}/>Acepto los Terminos y Condiciones
+            </div>
 
             <div className="botones">
             <input type="submit" className="boton" value="Registrar"/>
