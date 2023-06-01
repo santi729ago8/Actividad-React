@@ -8,7 +8,13 @@
 }
 
 .Card{
-    background-color: rgb(138, 172, 211);
+    /* background-color: rgb(138, 172, 211); */
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-modern-technology-electronic-blue-image_28160.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(233, 224, 224, 0.507);
+    background-blend-mode: soft-light;
     width: 220px;
     height: 270px;
     margin-top: 20px;
@@ -59,7 +65,7 @@
 }
 
 .Card:hover{
-    zoom: 150%;
+    zoom: 115%;
 }
 
 .product-list {
