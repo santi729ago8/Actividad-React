@@ -23,9 +23,9 @@ const Navbar = () => {
                     <NavLink exact={true.toString()} to="/" className="active">
                         <li>Home</li>
                     </NavLink>
-                    <NavLink to="/Login" className="active">
+                    {/* <NavLink to="/Login" className="active">
                         <li>Login</li>
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/Registrate" className="active">
                         <li>Registrate</li>
                     </NavLink>
