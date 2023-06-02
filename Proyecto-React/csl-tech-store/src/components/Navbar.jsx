@@ -15,7 +15,22 @@ const Navbar = () => {
             <nav className="navbar">
                 <img className="logo-1" src={Logo} alt="Logo" />
                 <ul>
-                <li className={`dropdown ${isOpen ? 'open' : ''}`}>
+                    <NavLink exact='true' to="/" className="active">
+                        <li>Home</li>
+                    </NavLink>
+                    <NavLink to="/Login" className="active">
+                        <li>Login</li>
+                    </NavLink>
+
+                    <NavLink to="/Registrate" className="active">
+                        <li>Registrate</li>
+                    </NavLink>
+                
+                    
+                    <NavLink to="/MiCarro" className="active">
+                        <li><img className='imagenCarrito' src={imagenCarrito}></img></li>
+                    </NavLink>
+                    <li className={`dropdown ${isOpen ? 'open' : ''}`}>
                         <a className="dropdown-toggle" onClick={toggleMenu}>
                             Categorías
                         </a>
@@ -31,20 +46,7 @@ const Navbar = () => {
                             </NavLink>
                         </ul>
                     </li>
-                    <NavLink exact='true' to="/" className="active">
-                        <li>Home</li>
-                    </NavLink>
-                    <NavLink to="/Login" className="active">
-                        <li>Login</li>
-                    </NavLink>
 
-                    <NavLink to="/Registrate" className="active">
-                        <li>Registrate</li>
-                    </NavLink>
-                    
-                    <NavLink to="/MiCarro" className="active">
-                        <li><img className='imagenCarrito' src={imagenCarrito}></img></li>
-                    </NavLink>
                 </ul>
             </nav>
         </div>

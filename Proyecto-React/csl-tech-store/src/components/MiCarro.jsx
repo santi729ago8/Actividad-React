@@ -20,7 +20,7 @@ const MiCarro = ({ carrito }) => {
 
     return (
         <>
-            <div className='product-list'>
+            <div className='product-list-miCarro'>
             {
                 data.map((item, index) => (
                     <CardCarrito key={index} cell={item} mostrarBoton={false} eliminarItemCarrito={ eliminarItemCarrito } />
@@ -28,9 +28,6 @@ const MiCarro = ({ carrito }) => {
             }
             </div>
             <h1 className='totalCompra'>Total: $ {totalCompra}</h1>
-
-
-
 
         </>
     )

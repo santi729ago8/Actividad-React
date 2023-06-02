@@ -1,4 +1,4 @@
-.form {
+.formIniciar {
     margin: auto;
     padding: 10px;
     border-radius: 15px;
@@ -6,10 +6,10 @@
     justify-content: center;
     color: rgb(5, 5, 5);
     background-color: rgb(156, 163, 175);
-    margin-top: 30px;
+    margin-top: 80px;
     font-size: 16px;
-    width: 300px;
-    margin-bottom: 90px;
+    width: 230px;
+    margin-bottom: 180px;
 }
 
 .formReg{

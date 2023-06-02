@@ -48,7 +48,7 @@ export const celulares = [
     {
         id: 0,
         name: 'APPLE ',
-        referencia: 'Iphone 14 plus 128GB',
+        referencia: 'Iphone 14 PLUS 128GB',
         precio: 5069000,
         imagen: id0,
     },
@@ -261,7 +261,7 @@ export const televisores = [
         id: 29,
         name: 'SAMSUNG',
         referencia: '65” QN65Q65BA 4K-UHD',
-        precio: 880.900,
+        precio: 4129000,
         imagen: id29,
     },
     {
@@ -275,7 +275,7 @@ export const televisores = [
         id: 31,
         name: 'LG',
         referencia: '70” 4k-UHD LED Smart Tv',
-        precio: 1444900,
+        precio: 3444900, 
         imagen: id31,
     },
     {
