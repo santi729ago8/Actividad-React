@@ -4,6 +4,7 @@ import Logo from './../assets/img/Logo.png'
 import React, { useState } from "react";
 import imagenCarrito from '../assets/img/carrito2.png'
 
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -25,8 +26,8 @@ const Navbar = () => {
                     <NavLink to="/Registrate" className="active">
                         <li>Registrate</li>
                     </NavLink>
-                
-                    
+
+
                     <NavLink to="/MiCarro" className="active">
                         <li><img className='imagenCarrito' src={imagenCarrito}></img></li>
                     </NavLink>

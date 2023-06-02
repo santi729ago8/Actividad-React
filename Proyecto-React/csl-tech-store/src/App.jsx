@@ -12,6 +12,7 @@ import CartasCelulares from './components/CartasCelulares'
 import CartasComputadores from './components/CartasComputadores'
 import CartasTelevisores from './components/CartasTelevisores'
 import ComponenteSesion3 from './../src/components/ComponenteSesion3'
+import wa from './assets/img/wa.png'
 import './assets/css/CartaProductos.css'
 
 
@@ -45,6 +46,7 @@ const App = () => {
 
       </div>
       <div>
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=573017808328&text&type=phone_number&app_absent=0" ><img className='logoWa' src={wa}></img></a>
         <ComponenteSesion3 />
       </div>
 

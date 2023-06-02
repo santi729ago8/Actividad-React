@@ -69,6 +69,9 @@ ul li a:hover {
     width: 50px;
     height: 40px
 }
+
+
+
 @media screen and (max-width: 499px){
     .barraNavegacion {
         background: rgb(19, 40, 83);
