@@ -9,20 +9,20 @@ import { NavLink } from 'react-router-dom';
 const ComponenteSesion2 = () => {
     return (
         <div>
-            <div className='contenedor-2'>
-                <div className='animate__animated animate__heartBeat'>
+                <div className='contenedor-2'>
+                <div className='animate__animated animate__rollIn'>
                     <h2 className='tituloC2' > Ofertas Destacadas</h2>
                 </div>
 
             </div>
             <div className='contenedor-sesion2'>
-            <div>
+                <div className='animate__animated animate__backInLeft'>
                     <NavLink to="/CartasCelulares"><img className='imagenPromocion' src={ofertaCelular}></img></NavLink>
                 </div>
-                <div>
+                <div className='animate__animated animate__backInLeft'>
                     <NavLink to="/CartasComputadores"><img className='imagenPromocion' src={ofertaComputador}></img></NavLink>
                 </div>
-                <div>
+                <div className='animate__animated animate__backInLeft'>
                     <NavLink to="/CartasTelevisores"><img className='imagenPromocion' src={ofertaTelevisor}></img></NavLink>
                 </div>
             </div>

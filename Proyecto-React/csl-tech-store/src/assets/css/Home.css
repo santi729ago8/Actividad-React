@@ -8,7 +8,7 @@
     display: grid;
     justify-content: center;
 }
-.label{
+#label{
     border-radius: 15px;
     padding-top: 20px;
     padding-bottom: 18px;

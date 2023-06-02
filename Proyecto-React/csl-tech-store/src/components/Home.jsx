@@ -39,8 +39,8 @@ const Home = () => {
             </div>
 
             <div className='contenedorLabel'>
-                <div className='label'>
-                    <label className='animate__animated animate__slideInLeft'> <b>Black Friday del 26 de mayo al 2 de junio aprovecha las mejores hiperofertas </b> </label>
+                <div className='animate__animated animate__slideInLeft' id='label' >
+                    <label> <b>Black Friday del 26 de mayo al 2 de junio aprovecha las mejores hiperofertas </b> </label>
                 </div>
             </div>
 
