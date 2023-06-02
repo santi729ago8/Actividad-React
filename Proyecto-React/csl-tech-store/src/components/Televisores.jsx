@@ -4,19 +4,20 @@ import { televisores } from '../components/data/productos'
 import { CardCarrito } from "./CardCarrito";
 
 
-const Televisores = ({ agregarDatos }) => {
+const Televisores = ({ agregarDatos, filtro }) => {
+    const itemsTelevisores = televisores
+        .filter((cell) => cell.name.toLowerCase().includes(filtro.toLowerCase()))
+        .map((cell, index) => {
 
-    const itemsTelevisores = televisores.map((cell, index) => {
+            return <CardCarrito
+                key={index}
+                cell={cell}
+                mostrarBoton={true}
+                agregarDatos={agregarDatos}
+                action={'tv'}
+            />
 
-        return <CardCarrito
-            key={index}
-            cell={cell}
-            mostrarBoton={true}
-            agregarDatos={agregarDatos}
-            action={'tv'}
-        />
-
-    })
+        })
 
     return (
         <div className='product-list'>

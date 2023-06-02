@@ -1,12 +1,30 @@
-import React from 'react'
-import Celulares from './Celulares'
+import React, { useState } from 'react';
+import Celulares from './Celulares';
 
 const CartasCelulares = ({ agregarDatos }) => {
-    return (
-            <div>
-                <Celulares agregarDatos={agregarDatos} />
-            </div>
-    )
-}
+  const [filtro, setFiltro] = useState('');
 
-export default CartasCelulares
+  const handleFiltroChange = (event) => {
+    setFiltro(event.target.value);
+  };
+
+  return (
+    <div>
+      <div>
+        <div className='divBuscador'>
+        <input className='buscador'
+          type="text"
+          placeholder="Buscar por Marca"
+          value={filtro}
+          onChange={handleFiltroChange}
+        />
+        </div>
+        
+      </div>
+      <Celulares agregarDatos={agregarDatos} filtro={filtro} />
+    </div>
+  );
+};
+
+export default CartasCelulares;
+

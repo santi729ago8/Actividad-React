@@ -10,3 +10,16 @@
     bottom: 20px;
     right: 15px;
 }
+.divBuscador{
+    display: grid;
+    justify-content: center;
+}
+.buscador{
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+}
